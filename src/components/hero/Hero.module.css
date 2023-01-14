@@ -1,6 +1,5 @@
 .hero {
-    background: url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80')
-    no-repeat center/cover;
+    background: url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80') no-repeat center/cover;
     width: 100%;
     height: 500px;
 
@@ -15,7 +14,7 @@ form {
     width: 100%;
     margin: auto;
     margin-top: 10%;
-    padding: 6px 15px;
+    padding: 10px 20px;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 24px;
     background-color: rgba(247, 247, 247, 0.9);
@@ -57,6 +56,7 @@ form input:focus {
 form .search_btn {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .hero .btn {
@@ -64,10 +64,14 @@ form .search_btn {
 }
 
 @media screen and (max-width: 720px) {
+    .hero {
+        justify-content: center;
+    }
+
     form {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        max-width: 330px;
         margin: auto 1rem;
     }
 
