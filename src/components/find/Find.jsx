@@ -49,7 +49,6 @@ const Find = () => {
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     {data.map(element =>
                         <SwiperSlide>
