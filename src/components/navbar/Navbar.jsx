@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <header className={styles.navbar}>
-            <img src={Logo} alt='Logo' />
+            <img className={styles.logo} src={Logo} alt='Logo' />
             <nav>
                 <ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]} >
                     <li>
